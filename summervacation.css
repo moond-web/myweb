@@ -1,0 +1,534 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-family: 'Noto Sans kr',sans-serif;
+}
+/**/
+
+.top {
+    width: 100%;
+    background-color: #2196F3;
+    color: white;
+    height: 30px;
+}
+
+.top ul{
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top ul li{
+    padding: 0 5px;
+    transition: all 0.5s;
+}
+.top ul li:hover{
+    background-color: #fff;
+}
+.top ul li a{
+    font: bold 14px/1.5 "Noto Sans kr";
+    color: #fff;
+}
+.top ul li a:hover{
+    color: #2196F3;
+}
+
+.top li.cheonan {
+  background-color: white;
+  color: #2196F3;
+  margin-top: 7px;
+  padding: 0 5px;
+  border-radius: 5px 5px 0 0 ;
+}
+.top li.cheonan a{
+    color: #2196F3;
+}
+
+/* ========== 헤더 전체 ========== */
+header{
+    height: 70px;
+    border-bottom: 1px solid #d2d2d2;
+}
+header .inner {
+  width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 왼쪽 - 수상 로고 */
+.award {
+  display: flex;
+  align-items: center;
+  transform: translate(-20px,-5px);
+}
+
+.award img {
+  height: 50px;
+}
+
+
+.award p{
+    font: 500 12px/1.5 "Noto Sans kr";
+    color: #333;
+}
+
+
+/* 중앙 - 학원 로고 */
+.main {
+  text-align: center;
+}
+
+.main img {
+  height: 75px;
+  transform: translate(80px,-10px);
+}
+.main p::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main p {
+    float: right;
+    transform: translate(80px,20px);
+    font: bold 24px/1.2 "Noto Sans kr";
+    color: #2196F3;
+}
+.main p a{
+    color:#2196F3
+}
+
+/* 오른쪽 - 전화번호 */
+.tel {
+    display: flex;
+    align-items: right;
+    transform: translate(260px,-10px);
+}
+
+.tel img {
+    height: 20px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    transform: translate(-5px,8px)
+}
+
+
+.tel p {
+    font: bold 24px/1.2 "arial";
+    color: #2196F3;
+    margin-top: 5px;
+}
+
+/* 오른쪽 - 유틸 메뉴 */
+.util {
+    display: flex;
+    align-items: right;
+    transform: translate(42px,20px);
+    font-size: 12px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+
+.util a {
+    font: bold 12px/1.5 "Noto Sans kr";
+    padding: 0 5px;
+    color: #2196F3;
+}
+.util a:hover{
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 3px;
+}
+/*header 끝*/
+.tab{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #d2d2d2;
+    
+}
+.tab nav{
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+.tab nav ul{
+    display: flex;
+}
+.tab nav ul li{
+    padding-top: 10px;
+}
+.tab nav ul li a{
+    font: bold 14px/1 "Noto Sans kr";
+    color: #333;
+}
+.tab nav ul li a:hover{
+    color: #2196F3;
+}
+.tab nav ul .online{
+    background: linear-gradient(to right, #C63DA7,#3CCC13);
+    border-radius: 30px;
+    margin-top: 2.5px;
+    padding: 10px;
+}
+.tab nav ul .online a{
+    color: #fff;
+}
+/*-----------------------*/
+
+.slide{
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slide ul{
+    position: relative;
+    width: 4800px;
+    height: 400px;
+}
+.slide ul li{
+    float: left;
+    width: 1200px;
+    height: 400px;
+}
+
+.slide ul li.s1{
+    background: url(../image/summer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide ul li.s2{
+    background: url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide ul li.s3{
+    background: url(../image/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide ul li.s4{
+    background: url(../image/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-------------------------------*/
+.contents{
+    width: 1200px;
+}
+.contents .guide::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contents .guide{
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    float: left;
+    margin-top: 40px;
+}
+.guide ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guide ul li{
+    text-align: center;
+    transition: 0.3s ease;
+}
+.guide ul li:hover{
+    transform: scale(1.1);
+    animation: guide 0.4s ease;
+    
+}
+@keyframes guide{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.15); }
+    70%  { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+.guide ul li a{
+    display: block;
+    height: 100%;
+}
+.guide ul li:hover span{
+    color: #2196F3;
+}
+.guide ul li p{
+    margin-bottom: 3px;
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+}
+.guide ul li span{
+    font: bold 14px/1.2 "Noto Sans kr";
+    color: #333;
+}
+.guide ul li span.aa{
+    color: #2196F3;
+}
+/*-------------------*/
+.contents .notice::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contents .notice{
+    width: 600px;
+    float: right;
+    display: flex;
+}
+.notice{
+    width: 600px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 100px;
+    border-bottom-style: outset;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.notice span{
+    font: bold 18px/1 "airal";
+    color: #2196F3;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    
+}
+.notice .two{
+    font: 500 14px/1.5 "Noto Sans kr";
+    color: #333;
+    position: absolute;
+    left: 100px;
+    top: 8px;
+    text-shadow: #000;    
+    width: 100%;
+    animation: rolltext 6s linear infinite;
+    opacity: 0;
+}
+.notice .two:nth-child(1){animation-delay: 0s;}
+.notice .two:nth-child(2){animation-delay: 2s;}
+.notice .two:nth-child(3){animation-delay: 4s;}
+@keyframes rolltext{
+    0%   { transform: translateY(100%); opacity: 0; }
+    10%  { transform: translateY(0%); opacity: 1; }
+    30%  { transform: translateY(0%); opacity: 1; }
+    40%  { transform: translateY(-100%); opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.info{
+    width: 600px;
+    height: 30px;
+    display: flex;
+}
+.info p{
+    font: bold 12px/1.5 "Noto Sans kr";
+    color: #444;
+    transform: translate(70px,50px);
+}
+.info h2{
+    font: bold 36px/1 "arial";
+    color: #2196F3;
+    transform: translate(5px,35px);
+}
+/*--------------------*/
+
+.bbutton .button{
+    margin-top: 150px;
+    width: 1200px;
+    height: 100px;
+}    
+.button ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button ul li{
+    width: 260px;
+    padding: 0px 10px;
+    display: flex;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+}
+.hover-bg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.4s;
+    transform: translate(-80px);
+    pointer-events: none;
+
+}
+.button ul li:hover .hover-bg{
+    width: 272px;
+    border-radius: 10px;
+    
+    
+}
+.button ul li a:hover{
+    color: #fff;
+}
+.button ul li img{
+    background-color: #2196F3;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    transform: translate(-80px,0px);
+    position: relative;   
+    z-index: 2; 
+}
+
+
+.button ul li a{
+    display: flex;
+    font: bold 16px/1.5 "Noto Sans kr";
+    text-align: center;
+    color: #333;
+    position: relative;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 3;
+}
+.button ul li .text{
+    position: relative;
+    z-index: 4;
+    font: bold 16px/1.5 "Noto Sans kr";
+}
+.button ul li .text:hover{
+    color: #fff;
+}
+/*-------------*/
+footer{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #444;
+    position: relative;    
+}
+.footera{
+    width: 1200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.footera h2{
+    font: bold 24px/1.2 "Noto Sans kr";
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    padding: 10px;
+}
+.footera img{
+    transform: translate(-10px,10px);
+}   
+.footera .cc{
+    position: absolute;
+    right: 370px;
+    top: 75px;
+    font: bold 16px/1.2 "arial";
+    color: #fff;
+}
+.bottom{
+    display: flex;
+    width: 1200px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding: 20px 250px;
+    font-size: 14px;
+}
+.bottom a{
+    width: 700px;
+    color: #fff;
+    font: bold 14px/1.5 "Noto Sans kr";
+}
+.bottom a:hover{
+    color: #a9a9a9;
+}
+.bottom2{
+    display: flex;
+    width: 1200px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding: 20px 350px;
+}
+.bottom2 a{
+    width: 700px;
+    color: #fff;
+    font: bold 14px/1.5 "Noto Sans kr";
+}
+.bottom2 a:hover{
+    color: #a9a9a9;
+}
+.bb{
+    width: 140px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    position: absolute;
+    right: 350px;
+    top: 250px;
+    background-color: #fff;
+    border-radius: 7px;
+    transition: all 0.3s;
+}
+.bb a{
+    color: #333;
+    font: 550 16px/1.2 "arial";
+}
+.bb:hover{
+    background-color: #a9a9a9;
+}
+.bb a:hover{
+    color: #fff;
+}
+.textbox{
+    position: absolute;
+    left: 350px;
+    top: 280px;
+    font: bold 12px/1.5 "Noto Sans kr";
+    color: #fff;
+}
+.textbox span{
+    font-size: 15px;
+}
+.textbox p{
+    margin-top: 10px;
+}
